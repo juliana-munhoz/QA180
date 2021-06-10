@@ -1,0 +1,31 @@
+---
+- title: senha invalida
+  payload:
+    email: juliana@yahoo.com
+    password: '1234'
+  code: 401
+  error: Unauthorized
+- title: senha vazia
+  payload:
+    email: juliana@yahoo.com
+    password: ''
+  code: 412
+  error: required password
+- title: senha e email vazios
+  payload:
+    email: ''
+    password: ''
+  code: 412
+  error: required email
+- title: email vazio
+  payload:
+    email: ''
+    password: '123'
+  code: 412
+  error: required email
+- title: usuario invalido
+  payload:
+    email: X@yahoo.com
+    password: '123'
+  code: 401
+  error: Unauthorized
