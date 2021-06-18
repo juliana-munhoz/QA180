@@ -3,7 +3,7 @@ require "capybara"
 require "capybara/cucumber"
 #require "faker"
 
-CONFIG = YAML.load_file(File.join(Dir.pwd, "/features/support/config/#{ENV["CONFIG"]}"))
+CONFIG = YAML.load_file(File.join(Dir.pwd, "features/support/config/#{ENV["CONFIG"]}"))
 
 case ENV["BROWSER"]
 when "firefox"

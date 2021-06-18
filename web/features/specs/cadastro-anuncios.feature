@@ -7,7 +7,7 @@ Funcionalidade: Cadastro de Anúncios
     Para que eu possa disponibiliza-los para locação
 
     Contexto: Login
-        * Login com "juliana@yahoo.com" e "123"
+        * Login com "miriam@gmail.com" e "123"
 
     Cenário: Novo equipo
 

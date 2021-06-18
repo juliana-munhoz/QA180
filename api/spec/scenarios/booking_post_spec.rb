@@ -9,7 +9,7 @@ describe "POST /equipos{equipo_id}/bookings" do
 
       #dado que usuario A tem um instrumento para locação
 
-      usuario_vendedor = Sessions.new.login({ email: "penelope@gmail.com", password: "123" })
+      usuario_vendedor = Sessions.new.login({ email: "locatario@gmail.com", password: "123" })
       usuario_vendedor_id = usuario_vendedor.parsed_response["_id"]
 
       instrumento_para_alugar = {

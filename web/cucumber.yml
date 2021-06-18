@@ -3,7 +3,7 @@
 #default: --publish
 
 #Nao gera o relatorio na nuvem 
-default: --publish-quiet -p allure -p bdd -p local -p chrome_headless
+default: --publish-quiet -p allure -p bdd -p local -p chrome
 bdd: -f pretty
 dots: -f progress
 html: -f html -o logs/report.html #-o representa um output

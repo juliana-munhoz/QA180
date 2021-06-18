@@ -16,7 +16,7 @@ describe "POST /signup" do
 
   context "usuario existente" do
     before(:all) do
-      payload = { name: "Rosa", email: "rosa@yahoo.com", password: "123" }
+      payload = { name: "Rosa", email: "rosa@gmail.com", password: "123" }
       MongoDB.new.remove_user(payload[:email])
       Signup.new.create(payload)
       @result = Signup.new.create(payload)
@@ -33,19 +33,19 @@ describe "POST /signup" do
   examples = [
     {
       title: "nome obrigatorio",
-      payload: { name: "", email: "edmar@yahoo.com", password: "123" },
+      payload: { name: "", email: "maria@gmail.com", password: "123" },
       code: 412,
       error: "required name",
     },
     {
       title: "email obrigatorio",
-      payload: { name: "edmar", email: "", password: "123" },
+      payload: { name: "Maria", email: "", password: "123" },
       code: 412,
       error: "required email",
     },
     {
       title: "senha obrigatorio",
-      payload: { name: "Edmar", email: "edmar@yahoo.com", password: "" },
+      payload: { name: "Maria", email: "maria@gmail.com", password: "" },
       code: 412,
       error: "required password",
     },
