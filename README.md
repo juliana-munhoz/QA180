@@ -1,3 +1,3 @@
 # QA180
 
-Curso QA Ninja, em desenvolvimento.
+Curso QA Ninja, automação com Ruby, Cucumber e Capybara.
